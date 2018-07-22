@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-// import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -12,13 +10,8 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
-// const appRoutes: Routes = [
-//     { path: 'recipe', component: RecipeListComponent },
-//     { path: 'shopping-list', component: ShoppingListComponent },
-    
-//     { path: '**', component: RecipeListComponent }
-// ];
 @NgModule({
    declarations: [
       AppComponent,
@@ -28,12 +21,11 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
       ShoppingEditComponent,
       RecipeListComponent,
       RecipeDetailComponent,
-      RecipeItemComponent
+      RecipeItemComponent,
+      DropdownDirective
    ],
    imports: [
       BrowserModule,
-      NgbModule.forRoot(),
-    //   RouterModule.forRoot()
    ],
    providers: [],
    bootstrap: [
