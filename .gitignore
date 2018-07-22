@@ -38,9 +38,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-#package file
-package-lock.json
-package.json
-tsconfig.json
-tslint.json
